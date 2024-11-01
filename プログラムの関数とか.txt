@@ -1,0 +1,34 @@
+
+ランダムの関数　サイコロのめ
+int func(void) {
+	srand(time(NULL));
+	return rand() % 6 + 1;
+}
+
+
+
+構造体の宣言
+struct CHARACTER_DATA
+{
+	char name[128];
+	int HP;
+	int STR;
+};
+
+
+画面クリア
+system("cls");
+
+
+// キー入力待ち
+	rewind(stdin);		// ←キー入力情報をクリアする
+	(void)getchar();	// キー入力待ち
+
+
+
+//処理まち、処理をとめない　待機状態に
+choice = _getch();
+
+
+switch文の中で
+case 0x0d://エンターキーを押すと画面移動
